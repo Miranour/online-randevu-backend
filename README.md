@@ -22,14 +22,18 @@ git clone [repo-url]
 npm install
 ```
 
-3. `.env` dosyasını oluşturun ve gerekli değişkenleri ayarlayın:
+3. PostgreSQL veritabanını kurun ve çalıştırın
+
+4. `.env` dosyasını oluşturun ve gerekli değişkenleri ayarlayın:
 ```
 PORT=5000
-MONGODB_URI=mongodb://localhost:27017/randevu-sistemi
+DB_HOST=localhost
+DB_PORT=5432
+DB_NAME=randevu_sistemi
+DB_USER=your_db_user
+DB_PASSWORD=your_db_password
 JWT_SECRET=your_jwt_secret_key
 ```
-
-4. MongoDB'yi başlatın
 
 5. Uygulamayı başlatın:
 ```bash
@@ -53,8 +57,8 @@ npm start
 
 - Node.js
 - Express.js
-- MongoDB
-- Mongoose
+- PostgreSQL
+- Sequelize ORM
 - JWT Authentication
 - Bcrypt
 
