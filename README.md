@@ -29,7 +29,7 @@ MONGODB_URI=mongodb://localhost:27017/randevu-sistemi
 JWT_SECRET=your_jwt_secret_key
 ```
 
-4. MongoDB'yi başlatın
+4.posgresql' başlatın
 
 5. Uygulamayı başlatın:
 ```bash
@@ -53,8 +53,7 @@ npm start
 
 - Node.js
 - Express.js
-- MongoDB
-- Mongoose
+- postgresql
 - JWT Authentication
 - Bcrypt
 
